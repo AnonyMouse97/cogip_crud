@@ -4,9 +4,10 @@
 - Repository: **COGIP-app**
 - Duration: **10 days** 🕓
 - Deadline: **19/04/2021 17:00** 🔔
-- Team: **Back: [Samuel Letocart](https://github.com/AnonyMouse97) & [Pierre Ricci](https://github.com/RicciPierre)**
-  **Front: [Pierre Ricci](https://github.com/RicciPierre)**
-  **[Natascha Gritte](https://github.com/Dhaibuna).**
+- Team: 
+    - Back: [Samuel Letocart](https://github.com/AnonyMouse97) & [Pierre Ricci](https://github.com/RicciPierre)
+    - Front: [Pierre Ricci](https://github.com/RicciPierre)
+    - Other: [Natascha Gritte](https://github.com/Dhaibuna).
 
 ## Missions objectives
 
@@ -41,3 +42,7 @@ desire of **Jean-Christian**.
 ### Requirements
 
 We will use the [MVC structure](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) provided in the [PHP MVC Boilerplate](https://github.com/NicolasJamar/php-mvc-boileplate) repo provided by our coach, to help us on our way!
+
+### Link to our app:
+
+[Our deployed app !](https://cogip-manager.herokuapp.com/)
