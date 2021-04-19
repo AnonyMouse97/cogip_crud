@@ -4,9 +4,9 @@
 - Repository: **COGIP-app**
 - Duration: **10 days** 🕓
 - Deadline: **19/04/2021 17:00** 🔔
-- Team: **-Back: [Samuel Letocart](https://github.com/AnonyMouse97)**
-  **- Front: [Pierre Ricci](https://github.com/RicciPierre)**
-  **-[Natascha Gritte](https://github.com/Dhaibuna).**
+- Team: **Back: [Samuel Letocart](https://github.com/AnonyMouse97) & [Pierre Ricci](https://github.com/RicciPierre)**
+  **Front: [Pierre Ricci](https://github.com/RicciPierre)**
+  **[Natascha Gritte](https://github.com/Dhaibuna).**
 
 ## Missions objectives
 
