@@ -1,0 +1,30 @@
+@media only screen and (min-width: 480px) {
+  .login-form {
+    margin: 30% auto;
+  }
+  .admin-view {
+    margin: 20% auto;
+    #disconnect {
+      margin-left: 88%;
+    }
+    .new-icc {
+      li {
+        margin: 8% 10% 0 10%;
+      }
+    }
+  }
+  .invoice-form,
+  .contact-form,
+  .company-form,
+  .user-form {
+    h2 {
+      margin: 10%;
+    }
+    form {
+      label {
+        text-align: center;
+        display: block;
+      }
+    }
+  }
+}

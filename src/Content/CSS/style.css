@@ -1,0 +1,1369 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../../font/Lato-Black.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../../font/Lato-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../../font/Lato-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  overflow: hidden;
+  background-color: #bdbbbb;
+}
+
+nav .logo {
+  display: block;
+  margin: 4%;
+  width: 40%;
+}
+
+nav #hamburger-link,
+nav #ddc {
+  display: none;
+}
+
+nav a {
+  display: block;
+  position: relative;
+  color: black;
+  text-decoration: none;
+  margin: 3%;
+}
+
+nav .hover-one {
+  display: inline-block;
+  position: relative;
+}
+
+nav .hover-one:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f80036;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+nav .hover-one:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+nav .hover-two {
+  display: inline-block;
+  position: relative;
+}
+
+nav .hover-two:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff7728;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+nav .hover-two:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+nav .hover-three {
+  display: inline-block;
+  position: relative;
+}
+
+nav .hover-three:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fcbc34;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+nav .hover-three:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+nav .hover-four {
+  display: inline-block;
+  position: relative;
+}
+
+nav .hover-four:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #009be9;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+nav .hover-four:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+nav .hover-five {
+  display: inline-block;
+  position: relative;
+}
+
+nav .hover-five:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00c500;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+nav .hover-five:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+nav .ddc-hover {
+  display: inline-block;
+  position: relative;
+}
+
+nav .ddc-hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0011ad;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+nav .ddc-hover:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+nav .icon {
+  background: #bdbbbb;
+  display: block;
+  position: fixed;
+  left: 85%;
+  top: 4%;
+}
+
+nav .ddc-icon {
+  position: relative;
+  right: 3%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.last-contact {
+  margin: 50% 0 25% 0;
+  padding: 0 3%;
+  max-width: 100%;
+}
+
+.last-contact h2 {
+  font-weight: bold;
+  text-align: center;
+  margin: 10% 0;
+}
+
+.last-contact .overflow {
+  overflow-x: auto;
+}
+
+.last-contact .overflow table {
+  font-size: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.last-contact .overflow table th {
+  padding: 3%;
+  color: #9ca2ad;
+  font-weight: bold;
+}
+
+.last-contact .overflow table td {
+  padding: 3%;
+  color: black;
+  border-bottom: 1px solid #d4dcec;
+}
+
+.last-contact .overflow table td a {
+  text-decoration: none;
+  color: black;
+}
+
+.last-contact .overflow table td a:hover {
+  color: #0011ad;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+}
+
+.last-invoices {
+  padding: 0 3%;
+  margin: 25% 0;
+  max-width: 100%;
+}
+
+.last-invoices h2 {
+  font-weight: bold;
+  text-align: center;
+  margin: 10% 0;
+}
+
+.last-invoices .overflow {
+  overflow-x: auto;
+}
+
+.last-invoices .overflow table {
+  font-size: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.last-invoices .overflow table th {
+  padding: 4%;
+  color: #9ca2ad;
+  font-weight: bold;
+}
+
+.last-invoices .overflow table td {
+  padding: 4%;
+  color: black;
+  border-bottom: 1px solid #d4dcec;
+}
+
+.last-invoices .overflow table td a {
+  text-decoration: none;
+  color: black;
+}
+
+.last-invoices .overflow table td a:hover {
+  color: #0011ad;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+}
+
+.last-companies {
+  padding: 0 3%;
+  margin: 25% 0;
+  max-width: 100%;
+}
+
+.last-companies h2 {
+  font-weight: bold;
+  text-align: center;
+  margin: 10% 0;
+}
+
+.last-companies .overflow {
+  overflow-x: auto;
+}
+
+.last-companies .overflow table {
+  font-size: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.last-companies .overflow table th {
+  padding: 5%;
+  color: #9ca2ad;
+  font-weight: bold;
+}
+
+.last-companies .overflow table td {
+  padding: 5%;
+  color: black;
+  border-bottom: 1px solid #d4dcec;
+}
+
+.last-companies .overflow table td a {
+  text-decoration: none;
+  color: black;
+}
+
+.last-companies .overflow table td a:hover {
+  color: #0011ad;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+}
+
+.invoices-view {
+  margin: 40% 0 20% 0;
+  padding: 0 3%;
+  max-width: 100%;
+}
+
+.invoices-view h2 {
+  font-weight: bold;
+  text-align: center;
+  margin: 10% 0;
+}
+
+.invoices-view .overflow {
+  overflow-x: auto;
+}
+
+.invoices-view .overflow table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.invoices-view .overflow table th {
+  padding: 2%;
+  color: #9ca2ad;
+  font-weight: bold;
+}
+
+.invoices-view .overflow table td {
+  padding: 2%;
+  color: black;
+  border-bottom: 1px solid #d4dcec;
+}
+
+.invoices-view .overflow table td a {
+  text-decoration: none;
+  color: black;
+}
+
+.invoices-view .overflow table td a:hover {
+  color: #0011ad;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+}
+
+.invoice-detail {
+  margin: 44% 2%;
+}
+
+.invoice-detail h2 {
+  margin: 10% 2% 15% 2%;
+  font-weight: bold;
+}
+
+.invoice-detail section {
+  margin: 5% 0 11% 0;
+}
+
+.invoice-detail section h2 {
+  margin: 10% 2% 15% 2%;
+  font-weight: bold;
+}
+
+.invoice-detail section .overflow {
+  overflow-x: auto;
+}
+
+.invoice-detail section .overflow table {
+  font-size: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.invoice-detail section .overflow table th {
+  padding: 5%;
+  color: #9ca2ad;
+  font-weight: bold;
+}
+
+.invoice-detail section .overflow table td {
+  padding: 5%;
+  color: black;
+  border-bottom: 1px solid #d4dcec;
+}
+
+.invoice-detail section .overflow table td a {
+  text-decoration: none;
+  color: black;
+}
+
+label {
+  margin: 2% 6%;
+  position: absolute;
+  top: 17%;
+  z-index: -1;
+}
+
+.select-type {
+  margin: 38% 0 0 6%;
+}
+
+.select-type .select {
+  border: none;
+  padding: 2%;
+}
+
+.companies-view {
+  margin: 10% auto;
+  padding: 0 5%;
+  max-width: 100%;
+}
+
+.companies-view h2 {
+  font-weight: bold;
+  text-align: center;
+  margin: 10% 2%;
+}
+
+.companies-view .overflow {
+  overflow-x: auto;
+}
+
+.companies-view .overflow table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.companies-view .overflow table th {
+  padding: 5%;
+  color: #9ca2ad;
+  font-weight: bold;
+}
+
+.companies-view .overflow table td {
+  padding: 5%;
+  color: black;
+  border-bottom: 1px solid #d4dcec;
+}
+
+.companies-view .overflow table td a {
+  text-decoration: none;
+  color: black;
+}
+
+.companies-view .overflow table td a:hover {
+  color: #0011ad;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+}
+
+.company-detail {
+  margin: 44% 2%;
+}
+
+.company-detail h2 {
+  margin: 10% 2%;
+  font-weight: bold;
+}
+
+.company-detail ul li {
+  padding: 2%;
+}
+
+.company-detail section {
+  margin: 5% 0 11% 0;
+}
+
+.company-detail section h2 {
+  margin: 10% 2%;
+  font-weight: bold;
+}
+
+.company-detail section .overflow {
+  overflow-x: auto;
+}
+
+.company-detail section .overflow table {
+  font-size: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.company-detail section .overflow table th {
+  padding: 5%;
+  color: #9ca2ad;
+  font-weight: bold;
+}
+
+.company-detail section .overflow table td {
+  padding: 5%;
+  color: black;
+  border-bottom: 1px solid #d4dcec;
+}
+
+.company-detail section .overflow table td a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-view {
+  margin: 50% 0 25% 0;
+  padding: 0 3%;
+  max-width: 100%;
+}
+
+.contact-view h2 {
+  font-weight: bold;
+  text-align: center;
+  margin: 10% 0;
+}
+
+.contact-view .overflow {
+  overflow-x: auto;
+}
+
+.contact-view .overflow table {
+  font-size: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-view .overflow table th {
+  padding: 3%;
+  color: #9ca2ad;
+  font-weight: bold;
+}
+
+.contact-view .overflow table td {
+  padding: 3%;
+  color: black;
+  border-bottom: 1px solid #d4dcec;
+}
+
+.contact-view .overflow table td a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-view .overflow table td a:hover {
+  color: #0011ad;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+}
+
+.contact-detail {
+  margin: 48% 2%;
+}
+
+.contact-detail section {
+  margin: 5% 0 11% 0;
+}
+
+.contact-detail section h2 {
+  margin: 10% 2% 15% 2%;
+  font-weight: bold;
+}
+
+.contact-detail section ul li {
+  padding: 2%;
+}
+
+.contact-detail section .overflow {
+  overflow-x: auto;
+}
+
+.contact-detail section .overflow table {
+  font-size: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-detail section .overflow table th {
+  padding: 5%;
+  color: #9ca2ad;
+  font-weight: bold;
+}
+
+.contact-detail section .overflow table td {
+  padding: 5%;
+  color: black;
+  border-bottom: 1px solid #d4dcec;
+}
+
+.contact-detail section .overflow table td a {
+  text-decoration: none;
+  color: black;
+}
+
+.login-form {
+  margin: 57% auto;
+}
+
+.login-form h2 {
+  text-align: center;
+  font-weight: bold;
+  margin: 20%;
+}
+
+.login-form form {
+  text-align: center;
+}
+
+.login-form form label {
+  text-align: justify;
+  position: initial;
+  font-weight: bold;
+}
+
+.login-form form input[type="text"],
+.login-form form input[type="password"] {
+  width: 80%;
+  padding: 4% 6%;
+  margin: 2% 0 6% 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.login-form form input[type="submit"] {
+  width: 80%;
+  padding: 3%;
+  margin: 3% 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.admin-view {
+  margin: 30% auto;
+}
+
+.admin-view #disconnect {
+  margin-left: 76%;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  position: relative;
+}
+
+.admin-view #disconnect:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0011ad;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.admin-view #disconnect:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.admin-view .welcome-message {
+  text-align: center;
+  margin: 5%;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.admin-view .new-icc {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.admin-view .new-icc li {
+  margin: 10% 5% 0 5%;
+}
+
+.admin-view .new-icc li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #9ca2ad;
+}
+
+.admin-view .new-icc li a:hover {
+  color: #0011ad;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+}
+
+.invoice-form {
+  margin: 0 auto;
+}
+
+.invoice-form h2 {
+  text-align: center;
+  font-weight: bold;
+  margin: 20%;
+}
+
+.invoice-form form {
+  text-align: center;
+}
+
+.invoice-form form label {
+  text-align: justify;
+  position: initial;
+  font-weight: bold;
+}
+
+.invoice-form form input[type="text"],
+.invoice-form form input[type="date"],
+.invoice-form form select {
+  width: 80%;
+  padding: 4% 6%;
+  margin: 2% 0 6% 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.invoice-form form input[type="submit"] {
+  width: 80%;
+  padding: 3%;
+  margin: 3% 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact-form,
+.company-form,
+.user-form {
+  margin: 0 auto;
+}
+
+.contact-form h2,
+.company-form h2,
+.user-form h2 {
+  text-align: center;
+  font-weight: bold;
+  margin: 20%;
+}
+
+.contact-form form,
+.company-form form,
+.user-form form {
+  text-align: center;
+}
+
+.contact-form form label,
+.company-form form label,
+.user-form form label {
+  text-align: justify;
+  position: initial;
+  font-weight: bold;
+  margin: 0 10%;
+}
+
+.contact-form form input[type="text"],
+.contact-form form select,
+.company-form form input[type="text"],
+.company-form form select,
+.user-form form input[type="text"],
+.user-form form select {
+  width: 80%;
+  padding: 4% 6%;
+  margin: 2% 0 6% 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact-form form input[type="submit"],
+.company-form form input[type="submit"],
+.user-form form input[type="submit"] {
+  width: 80%;
+  padding: 3%;
+  margin: 3% 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.users h2 {
+  margin: 10% 2%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.users table {
+  font-size: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.users table th {
+  padding: 5%;
+  color: #9ca2ad;
+  font-weight: bold;
+}
+
+.users table td {
+  padding: 5%;
+  color: black;
+  border-bottom: 1px solid #d4dcec;
+}
+
+.users table td a {
+  text-decoration: none;
+  color: black;
+}
+
+.users table td a:hover {
+  color: #0011ad;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+}
+
+@media only screen and (min-width: 600px) {
+  nav .logo {
+    display: block;
+    margin: 10px 10px;
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .last-contact {
+    margin: 35% 0 25% 0;
+  }
+  .last-invoice {
+    margin: 20% 0;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .invoices-view {
+    margin: 30% 0 20% 0;
+  }
+  .invoices-view h2 {
+    margin: 5% 0;
+  }
+  .invoices-view .overflow table {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .invoices-view .overflow table th {
+    padding: 5% 10%;
+  }
+  .invoices-view .overflow table td {
+    padding: 5% 10%;
+  }
+  .invoice-detail {
+    margin: 35% 2%;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  label {
+    margin: 0 6%;
+  }
+  .select-type {
+    margin: 25% 0 0 6%;
+  }
+  .select-type .select {
+    padding: 1%;
+  }
+  .companies-view .overflow table th {
+    padding: 8%;
+  }
+  .companies-view .overflow table td {
+    padding: 8%;
+  }
+  .company-detail {
+    margin: 35% 2%;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .contact-view {
+    margin: 25% 0;
+  }
+  .contact-detail {
+    margin: 35% 2%;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .login-form {
+    margin: 30% auto;
+  }
+  .admin-view {
+    margin: 20% auto;
+  }
+  .admin-view #disconnect {
+    margin-left: 88%;
+  }
+  .admin-view .new-icc li {
+    margin: 8% 10% 0 10%;
+  }
+  .invoice-form h2,
+  .contact-form h2,
+  .company-form h2,
+  .user-form h2 {
+    margin: 10%;
+  }
+  .invoice-form form label,
+  .contact-form form label,
+  .company-form form label,
+  .user-form form label {
+    text-align: center;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  nav .logo {
+    display: block;
+    margin: 1% 2%;
+    width: 10%;
+  }
+  nav #hamburger-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 5% 0 55%;
+    position: absolute;
+    bottom: 4%;
+  }
+  nav #hamburger-link li {
+    margin: 5%;
+  }
+  nav #hamburger-link li #ddc {
+    position: fixed;
+    left: 88.5%;
+    background-color: #bdbbbb;
+    padding: 1%;
+  }
+  nav #hamburger-link li #ddc li {
+    padding: 5%;
+  }
+  nav .icon {
+    display: none;
+  }
+  nav .ddc-icon {
+    left: 120%;
+    bottom: 50%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .last-contact,
+  .last-invoices,
+  .last-companies {
+    margin: 15% 0 5% 0;
+  }
+  .last-contact h2,
+  .last-invoices h2,
+  .last-companies h2 {
+    margin: 5% 0;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .invoices-view {
+    margin: 15% 0;
+  }
+  .invoices-view .overflow table th {
+    padding: 5%;
+  }
+  .invoices-view .overflow table td {
+    padding: 5%;
+  }
+  .invoice-detail {
+    margin: 15% 2%;
+  }
+  .invoice-detail h2 {
+    text-align: center;
+    margin: 3% 0;
+  }
+  .invoice-detail section h2 {
+    margin: 3% 0;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  label {
+    top: 35%;
+  }
+  .select-type {
+    margin: 20% 0 0 6%;
+  }
+  .companies-view {
+    margin: 5% auto;
+  }
+  .companies-view h2 {
+    margin: 5% 2%;
+  }
+  .companies-view .overflow table {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .companies-view .overflow table th {
+    padding: 8%;
+  }
+  .companies-view .overflow table td {
+    padding: 8%;
+  }
+  .company-detail {
+    margin: 20% 2%;
+    text-align: center;
+  }
+  .company-detail h2 {
+    margin: 5% 0%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .contact-view {
+    margin: 15% 0;
+  }
+  .contact-detail {
+    text-align: center;
+    margin: 15% 2%;
+  }
+  .contact-detail section {
+    margin: 8% 0;
+  }
+  .contact-detail section h2 {
+    margin: 5% 2%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .login-form {
+    margin: 15% auto;
+  }
+  .login-form h2 {
+    margin: 5%;
+  }
+  .login-form form label {
+    text-align: center;
+    display: block;
+  }
+  .login-form form input[type="text"],
+  .login-form form input[type="password"] {
+    width: 50%;
+    padding: 2% 3%;
+    margin: 3% 0;
+  }
+  .login-form form input[type="submit"] {
+    width: 50%;
+    padding: 2% 3%;
+    margin: 3% 0;
+  }
+  .admin-view {
+    margin: 10% auto;
+  }
+  .admin-view #disconnect {
+    margin: 1% 0 2% 93%;
+    z-index: auto;
+  }
+  .admin-view .welcome-message {
+    margin: 5%;
+  }
+  .admin-view .new-icc li {
+    text-align: center;
+    margin: 5% 13% 0 13%;
+  }
+  .invoice-form h2,
+  .contact-form h2,
+  .company-form h2,
+  .user-form h2 {
+    margin: 5%;
+  }
+  .invoice-form form label,
+  .contact-form form label,
+  .company-form form label,
+  .user-form form label {
+    text-align: center;
+    display: block;
+  }
+  .invoice-form form input[type="text"],
+  .invoice-form form input[type="date"],
+  .invoice-form form select,
+  .contact-form form input[type="text"],
+  .contact-form form input[type="date"],
+  .contact-form form select,
+  .company-form form input[type="text"],
+  .company-form form input[type="date"],
+  .company-form form select,
+  .user-form form input[type="text"],
+  .user-form form input[type="date"],
+  .user-form form select {
+    width: 50%;
+    padding: 2% 3%;
+    margin: 3% 0;
+  }
+  .invoice-form form input[type="submit"],
+  .contact-form form input[type="submit"],
+  .company-form form input[type="submit"],
+  .user-form form input[type="submit"] {
+    width: 50%;
+    padding: 2% 3%;
+    margin: 3% 0;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 3%;
+  text-align: center;
+  background-color: #bdbbbb;
+}
+
+@media only screen and (min-width: 1025px) {
+  footer {
+    position: initial;
+    padding: 3%;
+  }
+}

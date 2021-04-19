@@ -1,0 +1,26 @@
+@import "utils/reset/reset.scss";
+@import "utils/font_import/font_face.scss";
+
+@import "secondary/header/header_mobile.scss";
+@import "main/homepage_mobile.scss";
+@import "main/invoices_mobile.scss";
+@import "main/companies_mobile.scss";
+@import "main/contacts_mobile.scss";
+@import "main/admin_mobile.scss";
+
+@import "secondary/header/header_tablet.scss";
+@import "main/homepage_tablet.scss";
+@import "main/invoices_tablet.scss";
+@import "main/companies_tablet.scss";
+@import "main/contacts_tablet.scss";
+@import "main/admin_tablet.scss";
+
+@import "secondary/header/header_desktop.scss";
+@import "main/homepage_desktop.scss";
+@import "main/invoices_desktop.scss";
+@import "main/companies_desktop.scss";
+@import "main/contacts_desktop.scss";
+@import "main/admin_desktop.scss";
+
+@import "secondary/footer/footer.scss";
+@import "secondary/footer/footer_desktop.scss";

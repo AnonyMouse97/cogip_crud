@@ -1,0 +1,23 @@
+@media only screen and (min-width: 480px) {
+  .invoices-view {
+    margin: 30% 0 20% 0;
+    h2 {
+      margin: 5% 0;
+    }
+    .overflow {
+      table {
+        justify-content: center;
+        th {
+          padding: 5% 10%;
+        }
+        td {
+          padding: 5% 10%;
+        }
+      }
+    }
+  }
+
+  .invoice-detail {
+    margin: 35% 2%;
+  }
+}

@@ -1,0 +1,35 @@
+@media only screen and (min-width: 1025px) {
+  nav {
+    .logo {
+      display: block;
+      margin: 1% 2%;
+      width: 10%;
+    }
+    #hamburger-link {
+      display: flex;
+      flex-direction: row;
+      margin: 0 5% 0 55%;
+      position: absolute;
+      bottom: 4%;
+      li {
+        margin: 5%;
+        #ddc {
+          position: fixed;
+          left: 88.5%;
+          background-color: #bdbbbb;
+          padding: 1%;
+          li {
+            padding: 5%;
+          }
+        }
+      }
+    }
+    .icon {
+      display: none;
+    }
+    .ddc-icon {
+      left: 120%;
+      bottom: 50%;
+    }
+  }
+}

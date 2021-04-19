@@ -1,0 +1,26 @@
+@media only screen and (min-width: 480px) {
+  label {
+    margin: 0 6%;
+  }
+  .select-type {
+    margin: 25% 0 0 6%;
+    .select {
+      padding: 1%;
+    }
+  }
+  .companies-view {
+    .overflow {
+      table {
+        th {
+          padding: 8%;
+        }
+        td {
+          padding: 8%;
+        }
+      }
+    }
+  }
+  .company-detail {
+    margin: 35% 2%;
+  }
+}

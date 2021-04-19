@@ -1,0 +1,186 @@
+.login-form {
+  margin: 57% auto;
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    margin: 20%;
+  }
+  form {
+    text-align: center;
+    label {
+      text-align: justify;
+      position: initial;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 80%;
+      padding: 4% 6%;
+      margin: 2% 0 6% 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      width: 80%;
+      padding: 3%;
+      margin: 3% 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.admin-view {
+  margin: 30% auto;
+  #disconnect {
+    margin-left: 76%;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #0011ad;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    &:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+  .welcome-message {
+    text-align: center;
+    margin: 5%;
+    font-size: 150%;
+    font-weight: bold;
+  }
+  .new-icc {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    li {
+      margin: 10% 5% 0 5%;
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #9ca2ad;
+        &:hover {
+          color: #0011ad;
+          transition: 0.25s ease-out;
+        }
+      }
+    }
+  }
+}
+
+.invoice-form {
+  margin: 0 auto;
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    margin: 20%;
+  }
+  form {
+    text-align: center;
+    label {
+      text-align: justify;
+      position: initial;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="date"],
+    select {
+      width: 80%;
+      padding: 4% 6%;
+      margin: 2% 0 6% 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      width: 80%;
+      padding: 3%;
+      margin: 3% 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.contact-form,
+.company-form,
+.user-form {
+  margin: 0 auto;
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    margin: 20%;
+  }
+  form {
+    text-align: center;
+    label {
+      text-align: justify;
+      position: initial;
+      font-weight: bold;
+      margin: 0 10%;
+    }
+    input[type="text"],
+    select {
+      width: 80%;
+      padding: 4% 6%;
+      margin: 2% 0 6% 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      width: 80%;
+      padding: 3%;
+      margin: 3% 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.users {
+  h2 {
+    margin: 10% 2%;
+    font-weight: bold;
+    text-align: center;
+  }
+  table {
+    font-size: 100%;
+    text-align: center;
+    width: 100%;
+    th {
+      padding: 5%;
+      color: #9ca2ad;
+      font-weight: bold;
+    }
+    td {
+      padding: 5%;
+      color: black;
+      border-bottom: 1px solid #d4dcec;
+      a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+          color: #0011ad;
+          transition: 0.25s ease-out;
+        }
+      }
+    }
+  }
+}

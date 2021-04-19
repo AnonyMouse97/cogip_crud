@@ -1,0 +1,32 @@
+@media only screen and (min-width: 1025px) {
+  label {
+    top: 35%;
+  }
+  .select-type {
+    margin: 20% 0 0 6%;
+  }
+  .companies-view {
+    margin: 5% auto;
+    h2 {
+      margin: 5% 2%;
+    }
+    .overflow {
+      table {
+        justify-content: center;
+        th {
+          padding: 8%;
+        }
+        td {
+          padding: 8%;
+        }
+      }
+    }
+  }
+  .company-detail {
+    margin: 20% 2%;
+    text-align: center;
+    h2 {
+      margin: 5% 0%;
+    }
+  }
+}

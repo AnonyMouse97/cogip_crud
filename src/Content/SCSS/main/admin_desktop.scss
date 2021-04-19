@@ -1,0 +1,67 @@
+@media only screen and (min-width: 1025px) {
+  .login-form {
+    margin: 15% auto;
+    h2 {
+      margin: 5%;
+    }
+    form {
+      label {
+        text-align: center;
+        display: block;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 50%;
+        padding: 2% 3%;
+        margin: 3% 0;
+      }
+      input[type="submit"] {
+        width: 50%;
+        padding: 2% 3%;
+        margin: 3% 0;
+      }
+    }
+  }
+  .admin-view {
+    margin: 10% auto;
+    #disconnect {
+      margin: 1% 0 2% 93%;
+      z-index: auto;
+    }
+    .welcome-message {
+      margin: 5%;
+    }
+    .new-icc {
+      li {
+        text-align: center;
+        margin: 5% 13% 0 13%;
+      }
+    }
+  }
+  .invoice-form,
+  .contact-form,
+  .company-form,
+  .user-form {
+    h2 {
+      margin: 5%;
+    }
+    form {
+      label {
+        text-align: center;
+        display: block;
+      }
+      input[type="text"],
+      input[type="date"],
+      select {
+        width: 50%;
+        padding: 2% 3%;
+        margin: 3% 0;
+      }
+      input[type="submit"] {
+        width: 50%;
+        padding: 2% 3%;
+        margin: 3% 0;
+      }
+    }
+  }
+}
