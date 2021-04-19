@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 session_start();
 
-require 'env.php';
 require 'Controller/homepageController.php';
 require 'Controller/invoicesController.php';
 require 'Controller/contactController.php';
